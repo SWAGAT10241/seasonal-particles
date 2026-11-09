@@ -1,0 +1,32 @@
+title: "[Q&A]: "
+labels: ["question", "help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the **@swagat10241/seasonal-particles** Q&A category!
+        Ask questions about integrating the engine into your framework, customizing particle palettes, or optimizing canvas performance.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What do you need help with?
+      placeholder: E.g., How do I customize particle colors dynamically on theme change?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment & Stack Details
+      description: Which framework, bundler, and browser are you using?
+      placeholder: Next.js 15 (App Router), Vite 6, React 19, Tailwind CSS, Chrome 132...
+    validations:
+      required: false
+  - type: textarea
+    id: code-snippet
+    attributes:
+      label: Minimal Reproducible Code or Setup
+      description: Include your current component or canvas setup.
+      render: javascript
+    validations:
+      required: false

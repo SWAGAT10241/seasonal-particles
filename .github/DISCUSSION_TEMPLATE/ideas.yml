@@ -1,0 +1,43 @@
+title: "[Idea]: "
+labels: ["enhancement", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new idea for **@swagat10241/seasonal-particles**!
+        Share concepts for new seasonal atmospheric effects, physics behaviors, botanical rendering styles, or developer experience improvements.
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: Idea Description
+      description: What is your proposal? Be as specific as possible.
+      placeholder: E.g., Add a firefly illumination pulsation cycle, or support wind gusts driven by device tilt...
+    validations:
+      required: true
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: What problem or use case does this solve?
+      description: Explain why this would be valuable to developers or users.
+      placeholder: Provides richer interactivity for mobile visitors or allows creating custom autumn leaf geometries...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered other solutions, math models, or workarounds?
+  - type: dropdown
+    id: target-area
+    attributes:
+      label: Target Subsystem
+      description: Which part of the engine would this affect?
+      options:
+        - "Botanical Particle Rendering (Leaves, Snowflakes, Raindrops, Embers)"
+        - "Physics Engine (Wind, Flutter, Shockwaves, Repulsion)"
+        - "Season Configuration & Date Presets"
+        - "Framework Adapters (React, Next.js, Vue, Svelte)"
+        - "Performance & Memory Optimization"
+        - "Other"
+    validations:
+      required: true

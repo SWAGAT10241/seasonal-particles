@@ -1,0 +1,45 @@
+name: "✨ Feature Request"
+description: Suggest an idea or architectural improvement for @swagat10241/seasonal-particles
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a concrete feature request? You can also discuss broader brainstorms in [Discussions Ideas](https://github.com/SWAGAT10241/seasonal-particles/discussions/categories/ideas).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear description of what the problem is.
+      placeholder: I am frustrated when canvas renders blurry on 3x Retina displays or...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Visual Description
+      description: What should the new capability do, look like, or render?
+    validations:
+      required: true
+  - type: textarea
+    id: api-proposal
+    attributes:
+      label: Proposed API / Options
+      description: How would developers configure or use this new feature?
+      render: typescript
+      placeholder: |
+        engine.setWind({ gustSpeed: 4.5, turbulence: 0.8 });
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - "Botanical Geometry (New leaf/flower/crystal variants)"
+        - "Physics & Aerodynamics"
+        - "Accessibility & Reduced Motion"
+        - "Framework Adapters (React, Vue, Svelte, etc.)"
+        - "Performance Optimization"
+        - "Documentation / Examples"
+    validations:
+      required: true

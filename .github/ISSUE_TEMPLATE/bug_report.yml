@@ -1,0 +1,57 @@
+name: "🐛 Bug Report"
+description: File a bug report to help us improve @swagat10241/seasonal-particles
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please check existing issues and discussions first.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Particle simulation stalls when canvas is resized or shockwave math produces NaN under...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Steps or minimal reproduction code to reproduce the behavior.
+      placeholder: |
+        1. Initialize SeasonalParticles on a 300x200 canvas
+        2. Set season to 'varsha'
+        3. Trigger shockwave at x=150, y=100
+        4. See error or visual glitch
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Info
+      description: OS, browser version, device, screen resolution, framework.
+      placeholder: |
+        - OS: macOS 15.3 / Windows 11 / iOS 18
+        - Browser: Chrome 132 / Safari 18 / Firefox 135
+        - Device: Desktop / Mobile / High-DPI Retina
+        - Package Version: 1.0.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have tested with the latest version of `@swagat10241/seasonal-particles`.
+          required: true
+        - label: I searched existing issues and confirmed this is not a duplicate.
+          required: true

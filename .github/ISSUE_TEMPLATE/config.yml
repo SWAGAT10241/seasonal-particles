@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions (Q&A & Support)
+    url: https://github.com/SWAGAT10241/seasonal-particles/discussions
+    about: Ask questions, get integration advice, or propose broad ideas before filing an issue.
+  - name: 💡 Feature Ideas & RFCs
+    url: https://github.com/SWAGAT10241/seasonal-particles/discussions/categories/ideas
+    about: Pitch and brainstorm new seasonal effects, physics models, and renderers.
+  - name: 🎨 Community Showcase
+    url: https://github.com/SWAGAT10241/seasonal-particles/discussions/categories/show-and-tell
+    about: Share your live websites, apps, and portfolios built with this engine.
+  - name: 📖 Documentation & Guides
+    url: https://github.com/SWAGAT10241/seasonal-particles/tree/main/docs
+    about: Check the complete API, Seasons guide, Framework guides, and Benchmarks.

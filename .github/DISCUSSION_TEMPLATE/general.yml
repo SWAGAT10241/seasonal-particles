@@ -1,0 +1,14 @@
+title: "[General]: "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open conversation about **@swagat10241/seasonal-particles**, creative atmospheric ideas, or ecosystem collaborations.
+  - type: textarea
+    id: topic
+    attributes:
+      label: Discussion Topic
+      description: What would you like to discuss?
+    validations:
+      required: true

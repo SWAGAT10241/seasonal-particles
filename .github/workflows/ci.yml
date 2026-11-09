@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Lint, Types & Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verify JavaScript Syntax
+        run: |
+          node -c src/index.js
+          node -c src/SeasonalEngine.js
+
+      - name: Validate TypeScript Type Definitions
+        run: |
+          npm install -g typescript
+          tsc --noEmit src/types.d.ts
+
+      - name: Verify Zero-Dependency Constraint
+        run: |
+          node -e "
+            const pkg = require('./package.json');
+            if (pkg.dependencies && Object.keys(pkg.dependencies).length > 0) {
+              console.error('ERROR: Runtime dependencies detected! Must remain zero-dependency.');
+              process.exit(1);
+            }
+            console.log('Zero runtime dependencies constraint passed.');
+          "

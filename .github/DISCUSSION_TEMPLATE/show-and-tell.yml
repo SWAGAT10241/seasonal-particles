@@ -1,0 +1,27 @@
+title: "[Show & Tell]: "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show off your website, portfolio, web app, or game that uses **@swagat10241/seasonal-particles**!
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name & Link
+      description: What is your project and where can we see it live?
+      placeholder: "My Portfolio (https://example.com) or GitHub Repo"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: How are you using seasonal particles? Which seasons or custom effects did you build?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot-or-gif
+    attributes:
+      label: Screenshot or Video
+      description: Paste an image, video, or GIF link demonstrating the effect in your UI.
